@@ -1,0 +1,7 @@
+ticker,earnings_date,earnings_time,consensus_eps,reported_eps,consensus_revenue,reported_revenue,guidance,sector,market_cap,market_cap_bucket
+ACME,2025-01-10,AMC,1.20,1.35,1000,1040,raised,Technology,50000000000,large
+BETA,2025-01-15,BMO,0.80,0.70,500,480,lowered,Consumer,4000000000,mid
+GAMMA,2025-02-01,AMC,2.00,1.95,3000,3100,maintained,Healthcare,150000000000,mega
+DELTA,2025-02-10,BMO,0.50,0.55,700,710,raised,Industrials,9000000000,mid
+OMEGA,2025-02-20,AMC,1.00,0.90,1200,1180,none,Energy,2000000000,small
+ACME,2025-03-10,AMC,1.30,1.28,1100,1125,maintained,Technology,52000000000,large
