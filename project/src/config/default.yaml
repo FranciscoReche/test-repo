@@ -1,0 +1,59 @@
+paths:
+  raw_dir: project/data/raw
+  processed_dir: project/data/processed
+  reports_dir: project/reports
+  artifacts_dir: project/artifacts
+  polymarket_markets: project/data/raw/polymarket_markets.csv
+  polymarket_timeseries: project/data/raw/polymarket_timeseries.csv
+  earnings: project/data/raw/earnings.csv
+  equity_prices: project/data/raw/equity_prices.csv
+  master_dataset: project/data/processed/master_dataset.csv
+  quality_report: project/reports/data_quality_report.md
+  model_report: project/reports/model_report.md
+  backtest_report: project/reports/backtest_report.md
+
+cutoffs:
+  snapshot_windows:
+    - 7d
+    - 3d
+    - 1d
+    - 6h
+    - 1h
+    - 30m
+  min_market_age_hours: 6
+
+quality:
+  min_total_volume: 1000.0
+  min_recent_volume: 100.0
+  min_timeseries_observations: 5
+  max_gap_hours: 48
+  frozen_probability_epsilon: 0.01
+  stale_hours_before_event: 24
+  large_jump_probability: 0.15
+  tiny_jump_volume: 250.0
+  late_creation_hours: 12
+  consensus_misalignment_tolerance: 0.05
+  hard_exclusion_min_score: 20
+  reliability_weights:
+    liquidity: 0.20
+    recent_activity: 0.15
+    data_sufficiency: 0.15
+    pricing_stability: 0.10
+    rule_clarity: 0.10
+    consensus_alignment: 0.10
+    freshness: 0.10
+    alive: 0.05
+    anomaly_cleanliness: 0.05
+
+modeling:
+  random_seed: 42
+  min_train_size: 20
+  n_splits: 4
+  reliability_thresholds: [20, 40, 60, 80]
+  classification_threshold: 0.5
+
+backtest:
+  transaction_cost_bps: 5
+  min_abs_signal: 0.05
+  high_reliability_threshold: 60
+  anomaly_threshold: 70

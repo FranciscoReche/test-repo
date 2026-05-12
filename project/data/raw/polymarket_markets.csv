@@ -1,0 +1,7 @@
+market_id,title,ticker,market_type,resolution_rules,resolution_source,created_ts,close_ts,resolved_ts,current_yes_probability,current_no_probability,total_volume,recent_volume,metadata,comments,resolution_threshold
+m1,Will ACME beat EPS estimates?,ACME,EPS beat,Resolves Yes if reported adjusted EPS exceeds consensus EPS from filing,Company earnings release,2025-01-01T00:00:00Z,2025-01-10T21:00:00Z,2025-01-10T23:00:00Z,0.64,0.36,15000,2500,{},active discussion,1.20
+m2,Will BETA miss revenue?,BETA,revenue miss,Resolves Yes if reported revenue is below consensus revenue,Company earnings release,2025-01-05T00:00:00Z,2025-01-15T12:00:00Z,2025-01-15T13:00:00Z,0.42,0.58,300,20,{},thin market,0.80
+m3,GAMMA EPS above expectations?,GAMMA,EPS beat,Resolves Yes if reported adjusted EPS exceeds consensus EPS from filing,Company earnings release,2025-01-20T00:00:00Z,2025-02-01T21:00:00Z,2025-02-01T23:00:00Z,0.55,0.45,7000,900,{},steady market,2.00
+m4,DELTA earnings guidance positive?,DELTA,guidance,Resolves from official company guidance language,Company earnings release,2025-02-03T00:00:00Z,2025-02-10T12:00:00Z,2025-02-10T13:00:00Z,0.30,0.70,2500,400,{},late move,0.50
+m5,OMEGA will beat EPS?,OMEGA,EPS beat,unclear tbd,unknown,2025-02-15T00:00:00Z,2025-02-20T21:00:00Z,2025-02-20T23:00:00Z,0.80,0.20,100,0,{},bad rules,1.00
+m6,ACME next quarter beat EPS?,ACME,EPS beat,Resolves Yes if reported adjusted EPS exceeds consensus EPS from filing,Company earnings release,2025-03-01T00:00:00Z,2025-03-10T21:00:00Z,2025-03-10T23:00:00Z,0.48,0.52,12000,1500,{},normal,1.30
